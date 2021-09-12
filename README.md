@@ -33,7 +33,7 @@ pip install pychonet
 
 ## Basic usage
 
-## create the ECHONETLite listener service on port 3610, and output the propertymap for each ECHONETlite instance discovered
+### create the ECHONETLite listener service on port 3610, and output the propertymap for each ECHONETlite instance discovered
 
 ```python
 import asyncio
@@ -83,15 +83,14 @@ if __name__ == "__main__":
     asyncio.run(main())
 ```
 
-# create a ECHONETLite device using the Factory.
-# paramaters include the port listener, and EOJGC, EOJCC, and EOJCI codes
+### Create a ECHONETLite device using the Factory. Parameters include the port listener, and EOJGC, EOJCC, and EOJCI codes, which can be obtained from the above example.
 ```python
-aircon = Factory("192.168.1.6",server, 1,48,1)
+aircon = Factory("192.168.1.6", server, 1, 48, 1)
 ```
 
-# OR, create a specific ECHONETLite instance using built in objects.
+### OR, create a specific ECHONETLite instance using built in objects.
 ```python
-aircon = HomeAirConditioner("192.168.1.6", server )
+aircon = HomeAirConditioner("192.168.1.6", server)
 ```
 
 ### Turn HVAC on or off:
